@@ -59,7 +59,7 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t *payload, size_t length)
             uint8_t byte = payload[i];
             for (int bit = 0; bit < 8; bit++)
             {
-                frameBuffer[i * 8 + (7 - bit)] = (byte >> bit) & 1;
+                frameBuffer[i * 8 + (7 - bit)] = (byte >> bit) & 1; // 这里也可以使用或0
             }
         }
 

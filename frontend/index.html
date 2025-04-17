@@ -132,10 +132,10 @@
       for (let i = 0, byteIndex = 0; i < imageData.data.length; i += 4) {
         const avg = (imageData.data[i] + imageData.data[i + 1] + imageData.data[i + 2]) / 3;
         const bit = avg > THRESHOLD ? 1 : 0;
-        const pixelIndex = i / 4;
-        const bytePos = Math.floor(pixelIndex / 8);
+        const pixelIndex = i / 4; //imageData.data存储的是一维数组
+        const bytePos = Math.floor(pixelIndex / 8); //要把八个单像素的值压缩成一个字节
         const bitPos = 7 - (pixelIndex % 8);
-        binaryData[bytePos] |= (bit << bitPos);
+        binaryData[bytePos] |= (bit << bitPos);//这里面存储的是二进制的字节
       }
       return binaryData;
     }

@@ -28,6 +28,7 @@ https://www.bilibili.com/video/BV1g2R2Y8Esm/
   - CS: GPIO 7
   - DC: GPIO 6
   - RST: GPIO 10
+  - SDA, SCL: SPI 接口
 - **WiFi 网络**：需要连接到与前端相同的局域网。
 
 ## 软件依赖
