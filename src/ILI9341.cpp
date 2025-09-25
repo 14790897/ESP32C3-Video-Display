@@ -7,7 +7,7 @@
 namespace ILI9341
 {
     // 定义引脚
-    const uint8_t TFT_CS = 7;   // 片选
+    const uint8_t TFT_CS = 7;    // 片选    
     const uint8_t TFT_DC = 6;   // 数据/命令
     const uint8_t TFT_RST = 10; // 复位
 

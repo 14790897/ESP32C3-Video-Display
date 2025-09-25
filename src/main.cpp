@@ -2,7 +2,7 @@
 #define UC1701_number 0
 #define ST7789_number 1
 #define ILI9341_number 2
-#define SCREEN_TYPE ST7789_number // Set to UC1701, ST7789 or ILI9341
+#define SCREEN_TYPE ILI9341_number // Set to UC1701, ST7789 or ILI9341
 
 #if SCREEN_TYPE == UC1701_number
 #include "UC1701.h" // Include the header file instead of the .cpp file
